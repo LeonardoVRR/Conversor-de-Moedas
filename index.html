@@ -8,7 +8,62 @@
 </head>
 <body>
     
+    <main class="main_container">
+        <img src="imgs/money.gif" alt="imagem de uma mão dando dinheiro a outra mão" class="gif_money">
+        <article class="conversor_container">
+            <form class="conversor">
+                <div class="label_input">
+                    <label for="convert">Converter <strong>de</strong></label>
+                    <div class="convert_container">
+                        <img src="imgs/real(BR) coin.png" alt="simbolo real brasileiro" class="coin_symbol" id="coin_symbol_convert">
+                        <select id="convert">
+                            <option value="real">Real</option>
+                            <option value="dolar">Dólar americano</option>
+                            <option value="euro">Euro</option>
+                            <option value="iene">Ieni</option>
+                            <option value="libra">Libra</option>
+                            <option value="bitcoin">Bitcoin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="label_input">
+                    <label for="conversion_target">Converter <strong>para</strong></label>
+                    <div class="convert_container">
+                        <img src="imgs/dollar coin.png" alt="simbolo dollor americano" class="coin_symbol" id="coin_symbol_target">
+                        <select id="conversion_target">
+                            <option value="real">Real</option>
+                            <option value="dolar" selected>Dólar americano</option>
+                            <option value="euro">Euro</option>
+                            <option value="iene">Ieni</option>
+                            <option value="libra">Libra</option>
+                            <option value="bitcoin">Bitcoin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="label_input">
+                    <label for="value_to_convert">Valor</label>
+                    <input type="number" id="value_to_convert" placeholder="R$ 0,00" required>
+                </div>
+                <input type="submit" value="Converter" class="converter_btn">
+            </form>
+
+            <section class="conversion_result_container">
+                <div class="converted_value">
+                    <img src="imgs/brasil icon.png" class="country_flag">
+                    <h1 class="coin_name" id="coin_name_convert">Real</h1>
+                    <p class="value" id="value_coin_convert">0</p>
+                </div>
+                <img src="imgs/arrow.png" alt="" class="arrow">
+                <div class="conversion_result">
+                    <img src="imgs/estados-unidos icon.png" class="country_flag_2">
+                    <h1 class="coin_name" id="coin_name_target">Dólar americano</h1>
+                    <p class="value" id="value_coin_target">0</p>
+                </div>
+            </section>
+        </article>
+    </main>
 
     <script src="main.js"></script>
+
 </body>
 </html>

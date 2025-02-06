@@ -1,5 +1,161 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --cor_principal: #772FD3;
+}
+
+body {
+    background-color: #8A51FC;
+}
+
+.main_container {
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    width: 25vw;
+    height: 90vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+.gif_money {
+    width: 30%;
+}
+
+.conversor_container {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.conversor {
+    background-color: rgba(183, 255, 161, 0);
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
+.label_input {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 15px;
+
+    color: #777777;
+}
+
+.convert_container {
+    border: 1px solid #BBBBBB;
+    padding: 5px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.coin_symbol {
+    width: 8%;
+}
+
+#convert, #conversion_target {
+    border: none;
+    width: 100%;
+}
+
+#value_to_convert {
+    border: 1px solid #BBBBBB;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.converter_btn {
+    padding: 15px;
+    border: none;
+    background-color: var(--cor_principal);
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.converter_btn:hover {
+    background-color: rgb(150, 73, 228);
+}
+
+.conversion_result_container {
+    border: 1px solid var(--cor_principal);
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+
+    padding: 5px;
+    margin-bottom: 2%;
+}
+
+.converted_value, .conversion_result {
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.conversion_result_container h1 {
+    color: #777777;
+    font-size: 0.9em;
+}
+
+.conversion_result_container p {
+    color: #555555;
+    font-size: 1.1em;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.country_flag {
+    width: 4vw;
+}
+
+.country_flag_2 {
+    width: 3.8vw;
+}
+
+.arrow {
+    width: 7%;
 }
