@@ -122,7 +122,7 @@ conversor_form.addEventListener("submit", (event)=>{
 
     calculateConversion()
 
-    conversor_form.reset()
+    value_to_convert.value = ""
 })
 
 function calculateConversion() {
